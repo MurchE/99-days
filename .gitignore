@@ -1,0 +1,8 @@
+.DS_Store
+.vercel/
+deploy/.vercel/
+node_modules/
+*.log
+.env
+.env.local
+validation/screens/*.png.tmp

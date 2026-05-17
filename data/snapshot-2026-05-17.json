@@ -1,0 +1,215 @@
+{
+  "snapshotDate": "2026-05-17",
+  "period": {
+    "start": "2026-02-08",
+    "end": "2026-05-17",
+    "days": 99
+  },
+  "headline": {
+    "commits": {
+      "value": 2681,
+      "source": "G",
+      "note": "Across 13 named repos with sustained activity. Excludes one-day experiments."
+    },
+    "reposCreated": {
+      "value": 40,
+      "approximate": true,
+      "source": "G",
+      "note": "Repos with at least one commit, inception date in [Feb 8, May 17]. Many were one-day experiments."
+    },
+    "businessIdeas": {
+      "value": 93,
+      "source": "filesystem",
+      "note": "93 unique idea numbers across 94 directories (one #74 collision: proof-path AND tiered-memory-lifecycle). TRACKER.md shows 73 entries — known drift. Airtable shows ~93 records (per memory)."
+    },
+    "businessIdeasTracker": {
+      "value": 73,
+      "source": "T"
+    },
+    "tools": {
+      "value": 40,
+      "approximate": true,
+      "source": "tool-connectivity-matrix",
+      "note": "40+ tools across the stack, 65 known integration pairs"
+    },
+    "skills": {
+      "value": 44,
+      "source": "filesystem",
+      "note": "Skills under ~/.claude/skills/"
+    },
+    "tokenServices": {
+      "value": 73,
+      "source": "A",
+      "note": "Token Dashboard rows in Airtable"
+    },
+    "agents": {
+      "value": 9,
+      "source": "openclaw-instance-registry",
+      "note": "Named agents in the squad"
+    }
+  },
+  "squad": [
+    {"name": "ClawMac", "machine": "Mac Mini", "role": "executor + audit layer", "since": "2026-02-08"},
+    {"name": "ClawWin", "machine": "PC + WSL2", "role": "primary builder", "since": "2026-02-08"},
+    {"name": "ClawLee", "machine": "VPS container", "role": "workhorse / sub-agent farm", "since": "2026-02-18"},
+    {"name": "KakeyClaw", "machine": "VPS container", "role": "Karem's instance / partner agent", "since": "2026-02-20"},
+    {"name": "Caddy", "machine": "ClawMac", "role": "orchestrator + token FinOps", "since": "2026-04-09"},
+    {"name": "RefClaw", "machine": "Hetzner", "role": "strategist + KG maintainer", "since": "2026-04-09"},
+    {"name": "Rosie", "machine": "Hetzner", "role": "Discord ingestion + KG writer", "since": "2026-03-04"},
+    {"name": "ClawDad", "machine": "VPS host", "role": "ops / supervisor", "since": "2026-02-18"},
+    {"name": "SR", "machine": "remote", "role": "scheduled-routines runner", "since": "2026-04-15"}
+  ],
+  "productsShipped": [
+    {
+      "name": "Tangent",
+      "repo": "podcatcher",
+      "url": "tangent.my",
+      "status": "shipped (PWA + Capacitor), Android APK built",
+      "commits": 755,
+      "highlight": "Single-file PWA podcast player with Vercel API + Capacitor native wrappers."
+    },
+    {
+      "name": "Naggler AI",
+      "repo": "naggler-ai",
+      "url": "naggler.com",
+      "status": "v1.7.0 cross-platform binaries shipped (Mar 5); GTM dormant",
+      "commits": 341,
+      "highlight": "Cross-platform Win/Mac/Linux desktop nag app. README needs screenshot reconciliation."
+    },
+    {
+      "name": "Career Mode AI",
+      "repo": "career-mode-ai",
+      "status": "wired to real backend (resume upload, job analysis, coaching, LinkedIn import). 5 P0 bugs in review.",
+      "commits": 73,
+      "highlight": "Gamified career coaching with full backend integration."
+    },
+    {
+      "name": "Tender / Lume",
+      "repo": "LumeJournal/lume-v2",
+      "status": "Next.js 16 + Drizzle + Neon scaffold; DB not provisioned",
+      "commits": 6,
+      "highlight": "Voice-first journaling V2 rewrite. API.md + PROGRESS_LOG.md in place."
+    },
+    {
+      "name": "Promptrait",
+      "repo": "promptrait",
+      "status": "Vite+React+TS build succeeds in 600ms. Undeployed.",
+      "commits": 10,
+      "highlight": "12-question quiz → custom GPT instructions."
+    },
+    {
+      "name": "ES Mini Scalper",
+      "repo": "es-scalper",
+      "status": "paper trading bot; 98.5% WR across 111 OOS days at p>0.90 (model-time only, not live PnL)",
+      "commits": 32,
+      "highlight": "Momentum continuation RF model with IBKR + Databento data feeds."
+    },
+    {
+      "name": "Squad + Caddy + RefClaw",
+      "repo": "claude-workflows + squad-boot-docs",
+      "status": "operational; peer-approval mesh live as of 2026-05-16",
+      "commits": 991,
+      "highlight": "9-agent named squad across 4+ machines with Tailscale mesh, exec approval protocol, and Caddy as router."
+    },
+    {
+      "name": "Business Ideas Portfolio",
+      "repo": "business-ideas",
+      "status": "93 ideas catalogued, Airtable + TRACKER + filesystem (drift noted)",
+      "commits": 270,
+      "highlight": "Idea-to-product pipeline, 12 PRDs, 70+ one-pagers."
+    }
+  ],
+  "commitsByRepo": [
+    {"repo": "claude-workflows", "commits": 759},
+    {"repo": "podcatcher", "commits": 755},
+    {"repo": "naggler-ai", "commits": 341},
+    {"repo": "business-ideas", "commits": 270},
+    {"repo": "squad-boot-docs", "commits": 232},
+    {"repo": "clawtriage", "commits": 93},
+    {"repo": "career-mode-ai", "commits": 73},
+    {"repo": "evidence-agent", "commits": 59},
+    {"repo": "shared-canvas", "commits": 40},
+    {"repo": "es-scalper", "commits": 32},
+    {"repo": "counterfactual-rag", "commits": 11},
+    {"repo": "promptrait", "commits": 10},
+    {"repo": "LumeJournal", "commits": 6}
+  ],
+  "conceptsLearned": [
+    {"name": "RAMS (Reflective Agent Meta-Skills)", "source": "ADVERSARIAL-EVOLUTION-FRAMEWORK, postmortem-driven skill training"},
+    {"name": "Peer-approval protocols", "source": "AGENT-TO-AGENT-APPROVALS.md, ed25519 envelopes"},
+    {"name": "Mem0 long-term memory", "source": "OpenClaw integration"},
+    {"name": "Diverge-converge corpus methodology", "source": "DIVERGE-CONVERGE-PROTOCOL.md"},
+    {"name": "TokenRouter prepaid-pool ladder", "source": "TOKENROUTER-OPENCLAW-ROLLOUT-2026-05-04.md"},
+    {"name": "Tailscale mesh networking", "source": "cross-machine setup"},
+    {"name": "LLM-as-judge frameworks", "source": "llm-eval skill"},
+    {"name": "Capacitor PWA → native wrapping", "source": "Tangent pipeline"},
+    {"name": "Knowledge graph for agent state (Neo4j)", "source": "RefClaw KG"},
+    {"name": "Qdrant embeddings at scale", "source": "44K+ points across 8 collections"}
+  ],
+  "conceptsInvented": [
+    {
+      "name": "Voice-exhaust training",
+      "description": "Repurposing throwaway SuperWhisper recordings — the ones that didn't go anywhere — as training corpus for a voice-clone model. The 'exhaust' of daily thinking-out-loud becomes data."
+    },
+    {
+      "name": "PS5 controller programming",
+      "description": "Outfitting a DualSense to act as a keyboard-free programming surface. Hands free for thinking + voice; buttons for mode switches."
+    },
+    {
+      "name": "Peer-approval mesh",
+      "description": "Every agent's exec-approval list is generated from a canonical peer registry. Agents sign approvals for each other with ed25519. Murch is out of the loop for routine gates."
+    },
+    {
+      "name": "Caddy-as-shaper",
+      "description": "An orchestrator agent that doesn't just route — she templates configs, runs token FinOps, and rewrites her teammates' boot files. (CADDY-AS-SHAPER.md)"
+    },
+    {
+      "name": "Agent ecology with named identities",
+      "description": "The squad has names, machines, roles, failure modes. Not 'instance-7' — Caddy, ClawLee, Rosie. The identity carries operational meaning."
+    },
+    {
+      "name": "RAMS from postmortems",
+      "description": "Agent failure write-ups feed back into a training pipeline that updates skills. Mistakes are corpus, not waste."
+    },
+    {
+      "name": "Heartbeat sub-agents on free-tier",
+      "description": "Routine state-check ticks run on free-tier models in fresh contexts; only escalate to the priced primary when there's drift. Routine cost: $0."
+    },
+    {
+      "name": "Token FinOps as agent discipline",
+      "description": "Every tool has a row in a token dashboard; subscription tiers track against actual usage; agents prefer free pools first."
+    }
+  ],
+  "tools": {
+    "byCategory": {
+      "Agent harnesses": ["Claude Code", "OpenClaw", "Cursor", "Codex CLI", "Gemini CLI", "Aider", "Goose", "OpenCode", "Factory Droid", "Devin"],
+      "Routing + cost": ["TokenRouter", "OpenRouter", "Anthropic API direct"],
+      "Voice / dictation": ["SuperWhisper"],
+      "Knowledge": ["Airtable", "Linear", "Neo4j", "Qdrant", "Obsidian", "NotebookLM"],
+      "Hosting + infra": ["Vercel", "Hostinger VPS", "Docker", "Tailscale", "Cloudflare"],
+      "Build / framework": ["Next.js 16", "Vite", "Capacitor", "Drizzle", "Neon"],
+      "Browser + GUI": ["Playwright", "Mac-use", "Browser-Use"],
+      "Security": ["Semgrep", "Snyk"],
+      "Trading": ["IBKR API", "Databento"],
+      "Comms": ["Discord", "Gmail MCP", "ChatPRD"]
+    }
+  },
+  "honestAccounting": {
+    "revenue": "$0",
+    "subscriptionsPerMonth": "~$785 estimate (per prior audit)",
+    "documentationToCodeRatio": "approximately 3:1 (564 markdown files vs 179 code files in the Feb-Mar window per prior audit; trend persisted)",
+    "userTesting": "Career Mode AI never tested with external user; Naggler v1.7 binaries built but no real distribution channel",
+    "abandonedRepos": [
+      "persona-chat-poc", "HeyClaude", "homebrew-tap", "lottoshock",
+      "return-of-agents-hack", "pipr_hack", "scaf-kit-product",
+      "agent-marketplace-poc", "persona-engine", "keydrop"
+    ],
+    "whatDidntShip": [
+      "Naggler distribution / GTM",
+      "Career Mode AI public beta",
+      "Tender/Lume DB provisioning",
+      "Promptrait deployment",
+      "Live trading on ES scalper"
+    ]
+  }
+}
