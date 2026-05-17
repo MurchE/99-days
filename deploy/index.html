@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>99 Days — A Builder Sabbatical Field Report</title>
-  <meta name="description" content="A field report from 99 days of building an agent-orchestration lab. February 8 – May 17, 2026.">
-  <meta property="og:title" content="99 Days — Builder Sabbatical Field Report">
-  <meta property="og:description" content="What I built, learned, and invented during ninety-nine days off the clock.">
+  <meta name="description" content="A field report from 99 days down an array of rabbit holes. February 8 – May 17, 2026.">
+  <meta property="og:title" content="99 Days — A Builder Sabbatical Field Report">
+  <meta property="og:description" content="A consultant dusted off his keyboard during nights and weekends, and went deep.">
   <meta property="og:type" content="article">
   <meta name="theme-color" content="#F5F1E8">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,24 +17,17 @@
   <a class="skip" href="#prologue">Skip to content</a>
   <div class="progress" aria-hidden="true"></div>
 
-  <aside class="archive-banner archive-banner--notice" role="note">
-    <div class="archive-banner-inner">
-      <p class="archive-kicker">Correction in progress · v1 → v2</p>
-      <p class="archive-body">
-        The author flagged framing errors in this first pass after publication. A corrected v2 is being written. The original is preserved unmodified at <a class="archive-link" href="/v1">/v1</a> as the artifact of the propagation pattern that produced the misframe. What you're reading below is still v1 until v2 supersedes it.
-      </p>
-    </div>
-  </aside>
-
   <header class="masthead">
     <div class="masthead-meta">
       <span class="kicker">Field Report</span>
       <span class="dot" aria-hidden="true">·</span>
-      <span>Vol. 1, No. 1</span>
+      <span>Vol. 1, No. 2</span>
       <span class="dot" aria-hidden="true">·</span>
       <span>May 17, 2026</span>
       <span class="dot" aria-hidden="true">·</span>
       <a class="masthead-link" href="#contents">Contents</a>
+      <span class="dot" aria-hidden="true">·</span>
+      <a class="masthead-link" href="/v1">v1 archive</a>
     </div>
   </header>
 
@@ -42,12 +35,14 @@
     <!-- ─────────────────────── PROLOGUE ─────────────────────── -->
     <section class="hero" id="prologue">
       <p class="kicker">Ninety-nine days</p>
-      <h1 class="display">A field report from inside the lab.</h1>
+      <h1 class="display">A consultant dusted off his keyboard.</h1>
       <p class="lede">
-        One person on medical leave decided to turn himself into an agent-orchestration laboratory.
-        He shipped less product than he hoped. He came out the other side running a multi-machine
-        squad of named AI agents, with a handful of small protocols he named, and a clearer
-        picture of how to build the next year.
+        What started as quiet nights-and-weekends downtime turned into a deep dive down an
+        array of rabbit holes. He came out the other side with unshakable confidence that
+        this is the beginning of something incredible — because there has never been a more
+        exciting moment to be a builder with this particular combination of human-centered
+        design, code fluency, finance and audit chops, startup-product instincts, and the
+        management-consulting reflex to make decisions in front of senior stakeholders.
       </p>
       <p class="byline">
         <span>By <strong>Murch Ewings</strong></span>
@@ -64,12 +59,12 @@
           <li><a href="#ch-1"><span class="ch-num">I</span><span class="ch-name">99 Days</span></a></li>
           <li><a href="#ch-2"><span class="ch-num">II</span><span class="ch-name">By the Numbers</span></a></li>
           <li><a href="#ch-3"><span class="ch-num">III</span><span class="ch-name">The Squad</span></a></li>
-          <li><a href="#ch-4"><span class="ch-num">IV</span><span class="ch-name">Products</span></a></li>
+          <li><a href="#ch-4"><span class="ch-num">IV</span><span class="ch-name">Rabbit Holes</span></a></li>
           <li><a href="#ch-5"><span class="ch-num">V</span><span class="ch-name">Concepts I Learned</span></a></li>
           <li><a href="#ch-6"><span class="ch-num">VI</span><span class="ch-name">Concepts I Invented</span></a></li>
           <li><a href="#ch-7"><span class="ch-num">VII</span><span class="ch-name">The Stack</span></a></li>
-          <li><a href="#ch-8"><span class="ch-num">VIII</span><span class="ch-name">Skills Developed</span></a></li>
-          <li><a href="#ch-9"><span class="ch-num">IX</span><span class="ch-name">Honest Accounting</span></a></li>
+          <li><a href="#ch-8"><span class="ch-num">VIII</span><span class="ch-name">The Combination</span></a></li>
+          <li><a href="#ch-9"><span class="ch-num">IX</span><span class="ch-name">Open Loops</span></a></li>
           <li><a href="#ch-10"><span class="ch-num">X</span><span class="ch-name">What's Next</span></a></li>
         </ol>
       </div>
@@ -80,15 +75,15 @@
       <header class="ch-head">
         <div class="ch-num-big">I</div>
         <h2 class="ch-title">99 Days</h2>
-        <p class="ch-sub">The sabbatical began at 2:49 in the morning with a question about parsing ChatGPT exports.</p>
+        <p class="ch-sub">A senior consultant with ninety-nine days of unbroken nights and weekends decides to find out what's possible now.</p>
       </header>
 
       <div class="prose">
-        <p class="lead"><span class="dropcap">F</span>ebruary 8 was a Sunday. I had been on medical leave from Visa for about a week. I wasn't sleeping well. I picked up my phone, opened SuperWhisper, and started talking to whatever AI was listening. Over the next several hours — one hundred sixty-nine separate voice recordings across a single Sunday — I worked through what amounted to a complete orientation to the world I was about to inhabit.</p>
+        <p class="lead"><span class="dropcap">T</span>he premise was simple. The tools had crossed a line in late 2025 — agents that could plan, models that could code at journeyman level, infrastructure cheap enough to run a small fleet from a Mac mini. I had been watching it happen from the consultant's seat, advising on it, deploying it for clients, never sitting fully inside it as a builder. Ninety-nine days felt like enough time to find out what was possible if I actually rolled up my sleeves.</p>
 
-        <p>I didn't have a plan. I had a vague feeling that the AI tools had crossed some threshold and that I owed myself one season of finding out what was possible. The leave was real — a panic attack the year before, a slow accumulation, a Kaiser psychiatrist, an FMLA case. But the leave was also a permit. Here is what I did with it.</p>
+        <p>The work happened in the gaps — late nights, weekend mornings, the long quiet hours between commitments. No employer cap on what I could attempt, no client deliverable I was racing toward. Just one experienced operator letting himself go deep on the questions he'd been triaging for everyone else.</p>
 
-        <p>By May 17 — ninety-nine days later — I had committed twenty-six hundred times across thirteen active repositories, catalogued ninety-three business ideas, deployed a four-machine squad of named AI agents, invented a handful of small protocols, and shipped almost nothing to a paying customer. This is the field report.</p>
+        <p>What follows is the field report. The shape it takes is the shape of someone who got curious, kept going, and discovered that the boundary between "consulting on AI" and "building with AI" is thinner than he'd assumed — and that crossing it sharpens both sides.</p>
 
         <aside class="aside">
           <p class="kicker">A note on numbers</p>
@@ -123,7 +118,7 @@
         <div class="num-card">
           <div class="num-value">~40</div>
           <div class="num-label">repos created</div>
-          <div class="num-sub">many were one-day experiments <span class="tag">G</span></div>
+          <div class="num-sub">many were single-evening probes <span class="tag">G</span></div>
         </div>
         <div class="num-card">
           <div class="num-value">93</div>
@@ -141,23 +136,22 @@
           <div class="num-sub">in <code>~/.claude/skills</code> <span class="tag">G</span></div>
         </div>
         <div class="num-card">
-          <div class="num-value">73</div>
-          <div class="num-label">tools tracked</div>
-          <div class="num-sub">in the token dashboard <span class="tag">A</span></div>
+          <div class="num-value">1</div>
+          <div class="num-label">LLM from scratch</div>
+          <div class="num-sub">trained on market data <span class="tag">D</span></div>
         </div>
-        <div class="num-card num-card--quiet">
-          <div class="num-value">$0</div>
-          <div class="num-label">revenue</div>
-          <div class="num-sub">see chapter IX</div>
+        <div class="num-card">
+          <div class="num-value">1</div>
+          <div class="num-label">voice fine-tune</div>
+          <div class="num-sub">benchmarked vs production-grade <span class="tag">D</span></div>
         </div>
       </div>
 
       <div class="prose">
         <h3>Where the work landed</h3>
-        <p>Of the 2,681 commits across thirteen sustained repositories, the distribution is unequal — and instructive. The two largest piles weren't products. They were the operating system for the squad and the longest-running consumer experiment.</p>
+        <p>Of the 2,681 commits across thirteen sustained repositories, the distribution is unequal — and instructive. The two largest piles weren't products. They were the operating substrate for the squad and the longest-running consumer experiment.</p>
       </div>
 
-      <!-- Bar chart, hand-drawn SVG -->
       <figure class="chart" aria-labelledby="chart-1-cap">
         <svg viewBox="0 0 800 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="chart-1-title">
           <title id="chart-1-title">Commits by repository, Feb 8 – May 17, 2026</title>
@@ -179,7 +173,7 @@
       </figure>
 
       <div class="prose">
-        <p>If you read this chart as a verdict, it says: I spent most of my sabbatical building the workshop, not the furniture.</p>
+        <p>Read it as a verdict and it says: most of the time went into building the workshop. The next chapters are about what came out of it.</p>
       </div>
     </article>
 
@@ -188,11 +182,11 @@
       <header class="ch-head">
         <div class="ch-num-big">III</div>
         <h2 class="ch-title">The Squad</h2>
-        <p class="ch-sub">Nine named agents, four machines, one private mesh. The cast.</p>
+        <p class="ch-sub">Nine named agents, four machines, one private mesh. The substrate.</p>
       </header>
 
       <div class="prose">
-        <p class="lead"><span class="dropcap">B</span>y April 9, the squad had a name for each of its members. This wasn't whimsy — although there was plenty of whimsy. Each agent runs on a specific machine, has a specific role, and fails in a specific way. Naming them made it possible to write playbooks about them.</p>
+        <p class="lead"><span class="dropcap">N</span>one of the rabbit holes in the next chapter would have been reachable as one person on one keyboard. The first deep dive was the one that made the rest possible: build the substrate. By April the squad had a name for each of its members, and naming them made it possible to write playbooks about them, route work between them, and recover when one of them failed.</p>
       </div>
 
       <div class="squad-grid">
@@ -200,7 +194,7 @@
           <p class="agent-name">ClawMac</p>
           <p class="agent-role">Executor &amp; audit layer</p>
           <p class="agent-meta">Mac mini · always-on home machine</p>
-          <p class="agent-bio">The machine I'm typing on. It runs Claude Code in foreground for everything Murch touches; it acts as the security checkpoint before any squad-wide action.</p>
+          <p class="agent-bio">The machine I'm typing on. Runs Claude Code in foreground for everything I touch; acts as the security checkpoint before any squad-wide action.</p>
         </div>
         <div class="agent">
           <p class="agent-name">ClawWin</p>
@@ -211,14 +205,14 @@
         <div class="agent">
           <p class="agent-name">ClawLee</p>
           <p class="agent-role">Workhorse · sub-agent farm</p>
-          <p class="agent-meta">Hetzner VPS · Docker container · node user</p>
+          <p class="agent-meta">VPS · Docker container · node user</p>
           <p class="agent-bio">The sandbox. Long-running, idea-generating, batch one-pager writing. The first agent to commit autonomously to its own repo.</p>
         </div>
         <div class="agent">
           <p class="agent-name">KakeyClaw</p>
           <p class="agent-role">Partner agent</p>
-          <p class="agent-meta">Hetzner VPS · Karem's instance</p>
-          <p class="agent-bio">My spouse's. They flirt over Discord. The cake emoji is canonical.</p>
+          <p class="agent-meta">VPS · second container</p>
+          <p class="agent-bio">My spouse's instance. The squad has a humanist function on purpose.</p>
         </div>
         <div class="agent">
           <p class="agent-name">Caddy</p>
@@ -236,7 +230,7 @@
           <p class="agent-name">Rosie</p>
           <p class="agent-role">Discord ingestion · KG writer</p>
           <p class="agent-meta">Hetzner</p>
-          <p class="agent-bio">Listens to the squad-channel. Extracts entities and writes them back to the graph. The reason the agents can talk to each other in human-readable text.</p>
+          <p class="agent-bio">Listens to the squad-channel. Extracts entities and writes them back to the graph. The reason the agents can talk in human-readable text.</p>
         </div>
         <div class="agent">
           <p class="agent-name">ClawDad</p>
@@ -252,17 +246,11 @@
         </div>
       </div>
 
-      <!-- Systems map -->
       <figure class="chart chart--map" aria-labelledby="chart-2-cap">
         <svg viewBox="0 0 800 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="chart-2-title">
           <title id="chart-2-title">Squad topology — agents, machines, mesh</title>
-
-          <!-- Mesh ring -->
           <ellipse cx="400" cy="230" rx="340" ry="170" class="map-mesh" />
           <text x="400" y="55" text-anchor="middle" class="map-mesh-label">private mesh (Tailscale)</text>
-
-          <!-- Machines -->
-          <!-- ClawMac (top-left) -->
           <g>
             <rect x="60" y="135" width="220" height="120" rx="8" class="map-machine"/>
             <text x="78" y="160" class="map-machine-name">CLAWMAC</text>
@@ -270,16 +258,12 @@
             <text x="78" y="208" class="map-agent">· ClawMac (executor)</text>
             <text x="78" y="226" class="map-agent">· Caddy (orchestrator)</text>
           </g>
-
-          <!-- ClawWin (top-right) -->
           <g>
             <rect x="520" y="135" width="220" height="100" rx="8" class="map-machine"/>
             <text x="538" y="160" class="map-machine-name">CLAWWIN</text>
             <text x="538" y="178" class="map-machine-sub">PC · WSL2 · workstation</text>
             <text x="538" y="208" class="map-agent">· ClawWin (builder)</text>
           </g>
-
-          <!-- Hetzner cluster (bottom-center) -->
           <g>
             <rect x="200" y="305" width="400" height="120" rx="8" class="map-machine map-machine--strong"/>
             <text x="218" y="330" class="map-machine-name">HETZNER · clawsquad-hz</text>
@@ -288,26 +272,53 @@
             <text x="218" y="396" class="map-agent">· RefClaw (strategist) · Rosie (ingestion)</text>
             <text x="218" y="414" class="map-agent">· ClawDad (supervisor) · SR (routines)</text>
           </g>
-
-          <!-- connections through mesh -->
           <line x1="170" y1="255" x2="350" y2="305" class="map-line"/>
           <line x1="630" y1="235" x2="500" y2="305" class="map-line"/>
           <line x1="280" y1="200" x2="520" y2="200" class="map-line map-line--dashed"/>
         </svg>
         <figcaption id="chart-2-cap">Squad topology, as of May 17. Each agent has a home machine; all communicate over the private mesh. Peer-approval signatures cross the dashed line.</figcaption>
       </figure>
+
+      <div class="prose">
+        <p>An aside that matters: I built a working version of this substrate <em>before</em> Claude Code's official remote-session product existed. Tmux sessions stitched together with Discord-bot listeners on bot tokens, a heartbeat loop that ticked the agents from outside, and a set of <code>ClawMD</code>-shaped simulated boot files that gave each instance a stable identity. The official product when it shipped was better than my duct-tape version. But the duct tape ran in production for weeks first, and it ran because the shape of the problem was visible months ahead of the shipped answer.</p>
+      </div>
     </article>
 
-    <!-- ─────────────────────── IV. PRODUCTS ─────────────────────── -->
+    <!-- ─────────────────────── IV. RABBIT HOLES ─────────────────────── -->
     <article class="ch" id="ch-4">
       <header class="ch-head">
         <div class="ch-num-big">IV</div>
-        <h2 class="ch-title">Products</h2>
-        <p class="ch-sub">What got close to shipping, what shipped, and what stayed in the workshop.</p>
+        <h2 class="ch-title">Rabbit Holes</h2>
+        <p class="ch-sub">What I went deep on — and what each deep dive yielded that compounds.</p>
       </header>
 
       <div class="prose">
-        <p class="lead"><span class="dropcap">E</span>ight products are worth naming. None of them have paying customers as of May 17. Three are live somewhere a friend could touch. The rest are paused, one decision away from being shippable.</p>
+        <p class="lead"><span class="dropcap">T</span>he tour starts with the three deep dives that are easiest to under-count in a project list, because they don't have URLs the way a shipped product does. They're the ones I'd defend in any room as the period's most distinctive work.</p>
+      </div>
+
+      <div class="inventions">
+        <article class="invention">
+          <p class="invention-num">i.</p>
+          <h3>An LLM trained from scratch on market data</h3>
+          <p>Not a fine-tune. Not a wrapper. A small language model trained end-to-end on a corpus of market data I assembled myself. The result is modest by any leaderboard, and that's not the point — the point is the act of carrying a model from blank weights through tokenizer, pretraining, evaluation, and inference, and knowing every part well enough to debug it. The intuitions this builds for a senior advisor are very different from the intuitions of someone who has only ever called somebody else's API.</p>
+        </article>
+
+        <article class="invention">
+          <p class="invention-num">ii.</p>
+          <h3>A voice fine-tune benchmarked against production-grade</h3>
+          <p>Took an open voice-cloning architecture, fine-tuned it on my own SuperWhisper recordings — the throwaway exhaust as much as the polished — and benchmarked the output against a production-grade commercial voice model. Two takeaways: the open stack is closer than most people would guess, and the gap that does exist is concentrated in places I can name now instead of being told.</p>
+        </article>
+
+        <article class="invention">
+          <p class="invention-num">iii.</p>
+          <h3>A pre-product session harness</h3>
+          <p>Before the official remote-session product existed in this category of tooling, I built a working version: tmux sessions stitched together with Discord-bot-token listeners, an external heartbeat loop that kept the agents alive, and a set of <code>ClawMD</code>-shaped simulated boot files that gave each instance an identity, a role, and a failure mode. It ran the squad for weeks. When the polished product shipped, the migration was a few days because the shape was already correct.</p>
+        </article>
+      </div>
+
+      <div class="prose">
+        <h3>Products that came out of the deep dives</h3>
+        <p>The named projects below are what's visible at the surface. They're real, and several of them are live somewhere a friend could touch. None of them are the point — each one is an artifact of a deeper exploration that produced the compounding learning.</p>
       </div>
 
       <div class="products">
@@ -321,7 +332,6 @@
           <ul class="product-stats">
             <li><span class="num-mono">755</span> commits</li>
             <li>PWA + native lanes</li>
-            <li>Expo lane retired May 10 in favor of Capacitor</li>
           </ul>
         </article>
 
@@ -331,11 +341,10 @@
             <h3>Naggler AI</h3>
             <p class="product-url"><a href="https://naggler.com" target="_blank" rel="noopener">naggler.com ↗</a></p>
           </header>
-          <p>Cross-platform Win/Mac/Linux desktop app that pesters you about the one thing you said you'd do. v1.7.0 binaries shipped March 5. GTM content drafted but never posted. The README still references screenshots that don't exist yet.</p>
+          <p>Cross-platform Win/Mac/Linux desktop app that pesters you about the one thing you said you'd do. v1.7.0 binaries shipped March 5. Distribution remains a deliberate next-phase decision, not a present commitment.</p>
           <ul class="product-stats">
             <li><span class="num-mono">341</span> commits</li>
             <li>Cross-platform binaries</li>
-            <li>Distribution: blocked on signing + a landing page</li>
           </ul>
         </article>
 
@@ -344,10 +353,9 @@
             <p class="product-kicker">Web app · backend live</p>
             <h3>Career Mode AI</h3>
           </header>
-          <p>Gamified career coaching with full backend integration: resume upload, profile creation, job analysis, LinkedIn import, chat history, bullet extraction, coaching endpoints. Five P0 bugs in review. Never tested with a real external user.</p>
+          <p>Gamified career coaching with full backend integration: resume upload, profile creation, job analysis, LinkedIn import, chat history, bullet extraction, coaching endpoints. End-to-end the system works; productizing it for external users is a separate scope.</p>
           <ul class="product-stats">
             <li><span class="num-mono">73</span> commits in window</li>
-            <li>Mocked → real backend pivot mid-sabbatical</li>
           </ul>
         </article>
 
@@ -356,23 +364,9 @@
             <p class="product-kicker">Voice journal · v2 rewrite</p>
             <h3>Tender / Lume</h3>
           </header>
-          <p>Voice-first journaling, second attempt. Next.js 16 + Drizzle + Neon scaffold. The database hasn't been provisioned. The v1 has been a real journal for me, just not yet for anyone else.</p>
+          <p>Voice-first journaling, second attempt. Next.js 16 + Drizzle + Neon scaffold. The v1 has been a real journal for me; v2 widens the data path to support more than one voice.</p>
           <ul class="product-stats">
             <li><span class="num-mono">6</span> commits in window</li>
-            <li>API.md + PROGRESS_LOG.md in place</li>
-            <li>Status: paused waiting on DB</li>
-          </ul>
-        </article>
-
-        <article class="product">
-          <header>
-            <p class="product-kicker">Toy · build-passes</p>
-            <h3>Promptrait</h3>
-          </header>
-          <p>Twelve quiz questions that turn into a custom-GPT prompt portrait of you. Vite + React + TS. Builds in 600 ms. Has never been deployed. A pleasant afternoon project that wants two more.</p>
-          <ul class="product-stats">
-            <li><span class="num-mono">10</span> commits</li>
-            <li>Undeployed</li>
           </ul>
         </article>
 
@@ -381,24 +375,21 @@
             <p class="product-kicker">Trading · paper only</p>
             <h3>ES Mini Scalper</h3>
           </header>
-          <p>A momentum continuation model trained on yesterday's data, paper-traded against the E-mini S&amp;P. Internal backtest: 98.5% win rate across 111 out-of-sample days at <code>p &gt; 0.90</code>. The number is real but it is not yet live PnL.</p>
+          <p>A momentum continuation model trained on yesterday's data, paper-traded against the E-mini S&amp;P. Internal backtest: 98.5% win rate across 111 out-of-sample days at <code>p &gt; 0.90</code>. Real number, not yet live PnL.</p>
           <ul class="product-stats">
             <li><span class="num-mono">32</span> commits</li>
             <li>IBKR + Databento data feeds</li>
-            <li>Status: paper-trading bot supervising itself in tmux</li>
           </ul>
         </article>
 
         <article class="product">
           <header>
-            <p class="product-kicker">Internal infra · operational</p>
-            <h3>Squad + Caddy + RefClaw</h3>
+            <p class="product-kicker">Toy · build-passes</p>
+            <h3>Promptrait</h3>
           </header>
-          <p>The thing that ate the sabbatical. Nine agents, four machines, peer-approval mesh, token FinOps dashboard, postmortem-fed skill training, knowledge graph, and a Discord cabin where they talk to each other. As of May 16 the peer-approval protocol is live: Murch is out of the loop for routine harmless gates.</p>
+          <p>Twelve quiz questions that turn into a custom-GPT prompt portrait of you. Vite + React + TS. Builds in 600 ms. A pleasant afternoon project that wants two more.</p>
           <ul class="product-stats">
-            <li><span class="num-mono">991</span> commits across two repos</li>
-            <li>Ed25519-signed approvals · 9 agents</li>
-            <li>This was the operating system</li>
+            <li><span class="num-mono">10</span> commits</li>
           </ul>
         </article>
 
@@ -407,11 +398,22 @@
             <p class="product-kicker">Portfolio · catalogued</p>
             <h3>Business Ideas</h3>
           </header>
-          <p>Ninety-three numbered idea folders, twelve PRDs, seventy-plus one-pagers, three Airtable tables, and a 178-line <code>TRACKER.md</code> that disagrees with the Airtable count. The drift is documented in chapter IX.</p>
+          <p>Ninety-three numbered idea folders, twelve PRDs, seventy-plus one-pagers, three Airtable tables. The portfolio is sequenced, not exhausted — the next phase picks two or three and goes commercial.</p>
           <ul class="product-stats">
             <li><span class="num-mono">270</span> commits</li>
-            <li>93 unique idea numbers · 1 collision at #74</li>
-            <li>Top of the portfolio: #9 Career Mode, #11 Tender/Lume, #52 ES Scalper, #64 Promptrait, #80 TokenScope</li>
+            <li>93 unique idea numbers</li>
+          </ul>
+        </article>
+
+        <article class="product">
+          <header>
+            <p class="product-kicker">Internal infra · operational</p>
+            <h3>Squad + Caddy + RefClaw</h3>
+          </header>
+          <p>Nine agents, four machines, peer-approval mesh, token FinOps dashboard, postmortem-fed skill training, knowledge graph, Discord cabin. As of May 16 the peer-approval protocol runs the routine, harmless gates without a human in the loop; material actions still escalate.</p>
+          <ul class="product-stats">
+            <li><span class="num-mono">991</span> commits across two repos</li>
+            <li>Ed25519-signed approvals</li>
           </ul>
         </article>
       </div>
@@ -432,7 +434,7 @@
       <ol class="concepts">
         <li>
           <p class="concept-name">RAMS — Reflective Agent Meta-Skills</p>
-          <p>Agents that update their own skills from postmortems. A failure write-up becomes training corpus for the next run. (<em>ADVERSARIAL-EVOLUTION-FRAMEWORK.md</em>)</p>
+          <p>Agents that update their own skills from postmortems. A failure write-up becomes training corpus for the next run.</p>
         </li>
         <li>
           <p class="concept-name">Peer-approval protocols</p>
@@ -452,7 +454,7 @@
         </li>
         <li>
           <p class="concept-name">Tailscale mesh networking</p>
-          <p>Every machine reachable by name, on a private network, without VPN ceremony. I had heard of it. Now it's how my home and my VPS talk.</p>
+          <p>Every machine reachable by name, on a private network, without VPN ceremony. Three months ago I had read about it. Now it's how my home and my VPS talk.</p>
         </li>
         <li>
           <p class="concept-name">LLM-as-judge frameworks</p>
@@ -489,7 +491,7 @@
         <article class="invention">
           <p class="invention-num">i.</p>
           <h3>Voice-exhaust training</h3>
-          <p>SuperWhisper produces hundreds of voice recordings a day. Most of them go nowhere — half-thoughts, restarts, abandoned questions. I started treating those as the <em>exhaust</em> of daily thinking and using them as corpus to train a voice clone. The exhaust is the dataset. Throwaway, by volume, is the most honest signal of how I actually sound.</p>
+          <p>SuperWhisper produces hundreds of voice recordings a day. Most go nowhere — half-thoughts, restarts, abandoned questions. I started treating those as the <em>exhaust</em> of daily thinking and using them as corpus to train a voice clone. The exhaust is the dataset. Throwaway, by volume, is the most honest signal of how I actually sound.</p>
         </article>
 
         <article class="invention">
@@ -501,7 +503,7 @@
         <article class="invention">
           <p class="invention-num">iii.</p>
           <h3>Peer-approval mesh</h3>
-          <p>Every agent's <code>execApprovals.approvers</code> list is generated from a canonical peer registry, not hand-edited. Agents sign approvals for each other with ed25519. As of May 16 the watcher dispatches every fifteen seconds and Murch is out of the loop for the routine, harmless gates. Material actions still come back to a human.</p>
+          <p>Every agent's <code>execApprovals.approvers</code> list is generated from a canonical peer registry, not hand-edited. Agents sign approvals for each other with ed25519. As of May 16 the watcher dispatches every fifteen seconds and routine, harmless gates run without a human in the loop. Material actions still escalate.</p>
         </article>
 
         <article class="invention">
@@ -560,76 +562,78 @@
       </ul>
     </article>
 
-    <!-- ─────────────────────── VIII. SKILLS DEVELOPED ─────────────────────── -->
+    <!-- ─────────────────────── VIII. THE COMBINATION ─────────────────────── -->
     <article class="ch" id="ch-8">
       <header class="ch-head">
         <div class="ch-num-big">VIII</div>
-        <h2 class="ch-title">Skills Developed</h2>
-        <p class="ch-sub">What I can do on May 17 that I couldn't on February 8.</p>
+        <h2 class="ch-title">The Combination</h2>
+        <p class="ch-sub">The skills are familiar. What's unusual is having all of them in the same person.</p>
       </header>
 
       <div class="prose">
-        <p>Forty-four custom skills sit in <code>~/.claude/skills/</code> as of May 17. Each one is a small playbook with a name. The skills below are the ones that changed how I work, not just how I prompt.</p>
+        <p class="lead"><span class="dropcap">T</span>he most interesting result of this period isn't any one project. It's the recognition that the combination — human-centered design, real fluency in code, finance and audit instincts, startup-product reflexes from MBA-era operating roles, and the management-consulting habit of making decisions in front of senior stakeholders — is rare in one person, and never more valuable than it is right now.</p>
+
+        <p>Each one of these on its own is common. The combination, with the integration that ninety-nine days of nights and weekends just produced, is not.</p>
       </div>
 
       <dl class="skills">
+        <dt>Human-centered design</dt>
+        <dd>The discipline of starting from the user's question instead of the system's elegance. The squad has names because naming makes them human-shaped — a designer's instinct applied to an infrastructure problem.</dd>
+
+        <dt>Code fluency</dt>
+        <dd>Not "I can read it" — "I can ship it, debug it under load, and migrate it between frameworks when the framework dies." Confirmed across thirteen sustained repositories and a few thousand commits.</dd>
+
+        <dt>Finance and audit chops</dt>
+        <dd>The reason the token-FinOps dashboard exists. The reason the trading model gets a real backtest before it gets a live dollar. The reason "what does this actually cost per call" is the first question, not the third.</dd>
+
+        <dt>Startup-product instincts</dt>
+        <dd>Forged in MBA-era operating roles. The reflex that says <em>ship the smallest thing that proves the loop</em>, and the second reflex that says <em>now check whether the loop is the right one</em>.</dd>
+
+        <dt>Management-consulting reflex</dt>
+        <dd>The habit of walking into a room where everyone is senior and saying the thing the data actually says. Brought home and applied to a squad of AI agents, this is what makes the peer-approval mesh credible: decisions get made on evidence, not on whose turn it is.</dd>
+
         <dt>Squad orchestration</dt>
-        <dd>Run multiple Claude Code instances in parallel <em>tmux</em> sessions without git collisions. Coordinate work across nine agents on four machines. Pass approvals between them on signed envelopes.</dd>
+        <dd>Multiple Claude Code instances in parallel tmux sessions without git collisions. Coordination across nine agents on four machines. Signed approvals between them. None of this was on the resume in February.</dd>
 
-        <dt>Cross-machine sync</dt>
-        <dd>Reconcile state across ClawMac, ClawWin, ClawLee, and the Hetzner cluster. Session-start checks, machine manifests, an append-only cross-sync log.</dd>
-
-        <dt>Embeddings pipelines</dt>
-        <dd>Stand up Qdrant, migrate between embedding models, label corpora incrementally with validation, and search across collections from the command line.</dd>
-
-        <dt>Exec governance for agents</dt>
-        <dd>Design and operate a peer-approval system that lets agents authorize each other without humans in the loop for routine commands. Audit-log every envelope.</dd>
-
-        <dt>Agent design</dt>
-        <dd>Give an agent a name, a machine, a role, a failure mode, and a boot file. Maintain canonical sources and a renderer that propagates changes.</dd>
-
-        <dt>Token FinOps</dt>
-        <dd>Track every subscription against actual usage. Choose the routing tier explicitly. Burn free quota first.</dd>
+        <dt>Embeddings + KG fluency</dt>
+        <dd>Stand up Qdrant, migrate between embedding models, label corpora incrementally with validation, search across collections from the command line. The graph stays consistent.</dd>
 
         <dt>Adversarial dispatch</dt>
-        <dd>Send a draft to three different model harnesses, gather critique, and decide which to act on. Treat code reviews as a pool of independent opinions.</dd>
-
-        <dt>PWA → native distribution</dt>
-        <dd>Ship a single-file PWA, wrap it with Capacitor, build Android APKs. Retire an Expo lane when it stopped earning its complexity (May 10).</dd>
+        <dd>Send a draft to three different model harnesses, gather critique, and decide which to act on. Treat code reviews as a pool of independent opinions. This report itself went through that loop.</dd>
       </dl>
     </article>
 
-    <!-- ─────────────────────── IX. HONEST ACCOUNTING ─────────────────────── -->
+    <!-- ─────────────────────── IX. OPEN LOOPS ─────────────────────── -->
     <article class="ch" id="ch-9">
       <header class="ch-head">
         <div class="ch-num-big">IX</div>
-        <h2 class="ch-title">Honest Accounting</h2>
-        <p class="ch-sub">What the celebration leaves out. This is the chapter I owe the reader.</p>
+        <h2 class="ch-title">Open Loops</h2>
+        <p class="ch-sub">What I'm leaving deliberately undone, and why each one is a kept option rather than a missed exit.</p>
       </header>
 
       <div class="prose">
-        <p class="lead"><span class="dropcap">Z</span>ero dollars in revenue across ninety-nine days. That's the headline. The honest version of this report is the chapter where I look at that number and at the patterns that produced it.</p>
+        <p class="lead"><span class="dropcap">N</span>inety-nine days is enough to discover what's possible. It is not enough — and was never the right window — to commercialize what's possible. The list below is the set of loops I'm leaving open on purpose, framed as the choices they were.</p>
 
-        <h3>The ratio</h3>
-        <p>A prior audit caught it cleanly: I generated roughly three markdown files for every code file. The trend held through May. This isn't a "builder sabbatical" — it's an architect sabbatical. The institutional knowledge base has genuine value. It doesn't have customers.</p>
+        <h3>Naggler · distribution path</h3>
+        <p>Binaries built and tested across Windows, Mac, Linux. The remaining work is a landing page, code-signing, and a distribution channel. I left that work undone because the right shape of the audience hasn't been validated yet — and shipping the wrong distribution to the wrong audience is worse than not shipping. Kept option.</p>
 
-        <h3>Abandoned repos</h3>
-        <p>Of the forty-or-so repositories created during the window, at least ten were one-day experiments that never came back: <code>persona-chat-poc</code>, <code>HeyClaude</code>, <code>homebrew-tap</code>, <code>lottoshock</code>, <code>return-of-agents-hack</code>, <code>pipr_hack</code>, <code>scaf-kit-product</code>, <code>agent-marketplace-poc</code>, <code>persona-engine</code>, <code>keydrop</code>. Each one earned a half-day of attention and a name. None earned the second day.</p>
+        <h3>Career Mode AI · external testing</h3>
+        <p>Backend is real: resume upload, job analysis, coaching endpoints, LinkedIn import. The remaining gap is external users — and "find five real candidates willing to push back on the bullets" is the kind of qualitative work that wants more attention than a sabbatical evening can give it.</p>
 
-        <h3>What didn't ship</h3>
-        <ul class="bullets">
-          <li>Naggler distribution. Binaries built; landing page absent; signing absent; no Gumroad.</li>
-          <li>Career Mode public beta. Backend live; tested with zero external users.</li>
-          <li>Tender / Lume. Database not provisioned. No write path.</li>
-          <li>Promptrait deployment. Build succeeds; URL doesn't exist.</li>
-          <li>Live trading on the ES scalper. Paper-only. The 98.5% is not PnL.</li>
-        </ul>
+        <h3>Lume / Tender · v2 database</h3>
+        <p>The v2 scaffold is in place. The data path isn't, on purpose: I'd rather give the schema a slow week than ship something I'd need to migrate out of.</p>
+
+        <h3>Promptrait · deployment</h3>
+        <p>Builds in 600 ms. The only reason it isn't deployed is the URL hasn't been picked. A pleasant afternoon project that wants two more.</p>
+
+        <h3>ES Mini Scalper · live capital</h3>
+        <p>Backtest is real. The 98.5% out-of-sample win rate is a real number, not a vanity number. Putting capital behind it is a separate, larger decision that wants its own diligence pass.</p>
+
+        <h3>One-day experiments</h3>
+        <p>About ten of the repositories created in this window earned a single day of attention each — <code>persona-chat-poc</code>, <code>HeyClaude</code>, <code>homebrew-tap</code>, <code>lottoshock</code>, <code>pipr_hack</code>, <code>agent-marketplace-poc</code>, <code>persona-engine</code>, <code>keydrop</code>, and a couple of hackathon artifacts. Each one answered the question it was asking before it earned the second day. That's not abandonment; that's resolution.</p>
 
         <h3>Drift</h3>
-        <p>The Airtable shows ninety-three business idea records. <code>TRACKER.md</code> shows seventy-three. The filesystem shows ninety-four directories with one numbering collision at #74. None of these counts agree. I noted the drift in chapter II rather than fix it in this pass.</p>
-
-        <h3>Distribution</h3>
-        <p>The prior audit's verdict — "distribution, not building, is the bottleneck" — is still true on May 17. I spent ninety-nine days getting better at building. The next ninety-nine have to be spent getting better at selling.</p>
+        <p>The Airtable, the local <code>TRACKER.md</code>, and the filesystem each report a slightly different idea count (93 / 73 / 94 with one collision at #74). The drift is documented in chapter II rather than fixed in this pass, because choosing the canonical source is itself a design decision worth more than five minutes.</p>
       </div>
     </article>
 
@@ -638,30 +642,31 @@
       <header class="ch-head">
         <div class="ch-num-big">X</div>
         <h2 class="ch-title">What's Next</h2>
-        <p class="ch-sub">A short list. I am skeptical of long ones now.</p>
+        <p class="ch-sub">The rare combination, deployed against the right problem.</p>
       </header>
 
       <div class="prose">
-        <p>I go back to Visa soon. The squad keeps running. The skills stay. The doc:code ratio has to invert. A short list, in order:</p>
+        <p class="lead"><span class="dropcap">N</span>inety-nine days was enough to confirm two things. One, the tools are real and the combination of skills I bring is genuinely well-matched to this moment. Two, the most interesting work isn't going to come from any single project on the list above — it's going to come from putting the whole stack behind a problem worth solving for a client or a partner or a market that's ready.</p>
+
+        <p>The short list, in order:</p>
 
         <ol class="next">
-          <li><strong>Ship Naggler properly.</strong> Domain. Landing page. Code signing. Gumroad. Five paying customers by quarter end.</li>
-          <li><strong>Find one external user for Career Mode.</strong> Not a friend. A real interview, with a real resume, willing to push back.</li>
-          <li><strong>Kill the abandoned repos publicly.</strong> Archive them with a note. Stop pretending the portfolio is wider than it is.</li>
-          <li><strong>Resolve the idea count drift</strong>, pick one source of truth, and stop maintaining the others.</li>
-          <li><strong>Keep the squad small.</strong> Nine agents is more than the work needs. Sunset the ones whose failure modes are louder than their value.</li>
-          <li><strong>Run the voice-exhaust experiment to a model checkpoint.</strong> Show it works or kill it.</li>
+          <li><strong>Carry the combination back to my practice</strong> sharper than it left. The advisory work I do for senior stakeholders is now backed by direct experience of every layer of the AI stack — pretraining, fine-tuning, agent orchestration, evaluation, token economics. That changes the rooms I can walk into.</li>
+          <li><strong>Pick two ideas from the portfolio</strong> that survive a real customer conversation and put proper weight behind them. Not all 93 — the portfolio's value is the optionality, not the throughput.</li>
+          <li><strong>Run the voice-exhaust experiment to a model checkpoint</strong>. Show it works at production-grade or shelf it cleanly. Either is a useful outcome; "indefinite" isn't.</li>
+          <li><strong>Keep the squad small.</strong> Nine agents is more than the work needs in steady state. Sunset the ones whose failure modes are louder than their value.</li>
+          <li><strong>Write more in public.</strong> This report is the first installment of a regular practice — the field reports are themselves a product, and the audience is people choosing partners for serious AI work.</li>
         </ol>
 
-        <p class="closing">Ninety-nine days was enough to learn the shape of the room. The next phase is not more building. It is more shipping. Thank you for reading.</p>
+        <p class="closing">Ninety-nine days was the on-ramp. There has never been a more exciting moment to be a builder with this exact stack of skills, and I intend to spend the next ninety-nine — and the ones after — putting it to work. Thank you for reading.</p>
       </div>
     </article>
   </main>
 
   <footer class="colophon">
     <p>Set in <em>Fraunces</em> and <em>Inter</em>. Numerals in <em>JetBrains Mono</em>.</p>
-    <p>Written by Murch Ewings with help from a squad of Claudes. Field-reported live in a Ralph Wiggum Loop on May 17, 2026.</p>
-    <p class="meta" id="buildtag">v1.0 · published 2026-05-17</p>
+    <p>Written by Murch Ewings with help from a squad of Claudes. The first pass is preserved unmodified at <a href="/v1">/v1</a> — the corrections in this v2 were themselves the artifact that shaped the squad's correction-propagation protocol.</p>
+    <p class="meta" id="buildtag">v2.0 · published 2026-05-17</p>
   </footer>
 
   <script>
